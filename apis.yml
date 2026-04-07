@@ -4,9 +4,9 @@ url: >-
 name: Cartography
 tags:
   - Cartography
-  - Security
   - Cloud Infrastructure
   - Graph
+  - Security
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -22,8 +22,8 @@ apis:
   - aid: cartography:cartography
     name: Cartography
     tags:
-      - Security
       - Cloud Infrastructure
+      - Security
     humanURL: https://lyft.github.io/cartography/
     properties:
       - url: https://lyft.github.io/cartography/
