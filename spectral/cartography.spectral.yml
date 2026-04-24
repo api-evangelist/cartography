@@ -1,0 +1,68 @@
+extends:
+  - spectral:oas
+
+rules:
+  cartography-info-title:
+    description: Cartography-related API info.title SHOULD end with "API".
+    given: $.info
+    severity: warn
+    then:
+      field: title
+      function: pattern
+      functionOptions:
+        match: ".*API$"
+
+  cartography-info-version:
+    description: Cartography-related APIs MUST declare a semantic version.
+    given: $.info
+    severity: error
+    then:
+      field: version
+      function: pattern
+      functionOptions:
+        match: "^\\d+\\.\\d+\\.\\d+(-.*)?$"
+
+  cartography-asset-schema:
+    description: APIs modeling graph assets should define a reusable Asset schema.
+    given: $.components.schemas.Asset
+    severity: info
+    then:
+      function: truthy
+
+  cartography-relationship-schema:
+    description: APIs modeling graph relationships should define a reusable Relationship schema.
+    given: $.components.schemas.Relationship
+    severity: info
+    then:
+      function: truthy
+
+  cartography-identity-schema:
+    description: APIs modeling principals should define a reusable Identity schema.
+    given: $.components.schemas.Identity
+    severity: info
+    then:
+      function: truthy
+
+  cartography-error-response:
+    description: Cartography-related operations should declare a 400 error response.
+    given: $.paths[*][*].responses
+    severity: warn
+    then:
+      field: "400"
+      function: truthy
+
+  cartography-tag-descriptions:
+    description: Each tag should carry a description.
+    given: $.tags[*]
+    severity: warn
+    then:
+      field: description
+      function: truthy
+
+  cartography-operation-summary:
+    description: Each operation should have a summary.
+    given: $.paths[*][get,post,put,delete,patch]
+    severity: warn
+    then:
+      field: summary
+      function: truthy

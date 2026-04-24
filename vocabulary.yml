@@ -1,0 +1,62 @@
+vocabulary: cartography
+description: >-
+  Controlled vocabulary for Lyft's Cartography security-graph tool. Defines
+  the core graph concepts (assets, identities, relationships) that span
+  cloud, identity, DevOps, and endpoint ingest modules.
+version: '1.0.0'
+concepts:
+  - term: Asset
+    definition: >-
+      A node in the Cartography graph representing an infrastructure,
+      identity, or security entity ingested from an upstream provider.
+  - term: Identity
+    definition: >-
+      A principal (user, group, service account, role) that can be
+      authenticated and authorized to access assets.
+  - term: CloudAccount
+    definition: >-
+      A tenancy boundary in a cloud provider (AWS account, GCP project,
+      Azure subscription, OCI tenancy).
+  - term: ComputeInstance
+    definition: >-
+      A virtual machine, container, or compute node (EC2 instance, GCE VM,
+      Azure VM, pod, Lambda function).
+  - term: Datastore
+    definition: >-
+      A managed data store (S3 bucket, RDS instance, DynamoDB table,
+      CosmosDB, Cloud SQL, blob container).
+  - term: NetworkPath
+    definition: >-
+      A reachable route from one asset to another across security groups,
+      subnets, peerings, and load balancers.
+  - term: Permission
+    definition: >-
+      An authorization grant linking an identity to an action on a resource
+      (IAM policy, role binding, RBAC rule).
+  - term: Repository
+    definition: >-
+      A source-code repository (typically GitHub) with associated
+      collaborators, teams, and access.
+  - term: Secret
+    definition: >-
+      A managed credential or key (KMS key, Key Vault secret, GitHub Actions
+      secret) with access relationships tracked in the graph.
+  - term: Detection
+    definition: >-
+      An EDR or scanner finding (CrowdStrike, SentinelOne, Trivy) associated
+      with an asset or identity.
+  - term: Relationship
+    definition: >-
+      A typed edge between two assets (e.g. HAS_PERMISSION, EXPOSES_TO,
+      MEMBER_OF, OWNS, SCANS).
+mappings:
+  - term: Identity
+    schema_org: schema:Person
+  - term: CloudAccount
+    schema_org: schema:Organization
+  - term: ComputeInstance
+    schema_org: schema:ComputerLanguage
+  - term: Datastore
+    schema_org: schema:Dataset
+  - term: Repository
+    schema_org: schema:SoftwareSourceCode

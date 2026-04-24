@@ -1,0 +1,130 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "cartography": "https://lyft.github.io/cartography/vocab#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Asset": {
+      "@id": "cartography:Asset",
+      "@context": {
+        "assetId": "schema:identifier",
+        "assetType": "cartography:assetType",
+        "provider": "schema:provider",
+        "firstSeen": {
+          "@id": "cartography:firstSeen",
+          "@type": "xsd:dateTime"
+        },
+        "lastUpdated": {
+          "@id": "cartography:lastUpdated",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Identity": {
+      "@id": "schema:Person",
+      "@context": {
+        "principalId": "schema:identifier",
+        "principalType": "cartography:principalType",
+        "email": "schema:email",
+        "provider": "schema:provider"
+      }
+    },
+
+    "CloudAccount": {
+      "@id": "cartography:CloudAccount",
+      "@context": {
+        "accountId": "schema:identifier",
+        "provider": "schema:provider",
+        "tenant": "cartography:tenant"
+      }
+    },
+
+    "ComputeInstance": {
+      "@id": "cartography:ComputeInstance",
+      "@context": {
+        "instanceId": "schema:identifier",
+        "region": "schema:addressRegion",
+        "publicIp": "cartography:publicIp",
+        "privateIp": "cartography:privateIp",
+        "exposedToInternet": {
+          "@id": "cartography:exposedToInternet",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+
+    "Datastore": {
+      "@id": "cartography:Datastore",
+      "@context": {
+        "datastoreId": "schema:identifier",
+        "datastoreType": "cartography:datastoreType",
+        "encrypted": {
+          "@id": "cartography:encrypted",
+          "@type": "xsd:boolean"
+        },
+        "public": {
+          "@id": "cartography:public",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+
+    "Permission": {
+      "@id": "cartography:Permission",
+      "@context": {
+        "principal": {
+          "@id": "cartography:principal",
+          "@type": "@id"
+        },
+        "resource": {
+          "@id": "cartography:resource",
+          "@type": "@id"
+        },
+        "action": "cartography:action",
+        "effect": "cartography:effect"
+      }
+    },
+
+    "Repository": {
+      "@id": "schema:SoftwareSourceCode",
+      "@context": {
+        "repoId": "schema:identifier",
+        "url": "schema:codeRepository",
+        "private": {
+          "@id": "cartography:private",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+
+    "Detection": {
+      "@id": "cartography:Detection",
+      "@context": {
+        "detectionId": "schema:identifier",
+        "severity": "cartography:severity",
+        "raisedAt": {
+          "@id": "cartography:raisedAt",
+          "@type": "xsd:dateTime"
+        },
+        "source": "schema:provider"
+      }
+    },
+
+    "Relationship": {
+      "@id": "cartography:Relationship",
+      "@context": {
+        "edgeType": "cartography:edgeType",
+        "from": {
+          "@id": "cartography:from",
+          "@type": "@id"
+        },
+        "to": {
+          "@id": "cartography:to",
+          "@type": "@id"
+        }
+      }
+    }
+  }
+}
