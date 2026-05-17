@@ -9,7 +9,7 @@ description: >-
   security teams answer cross-provider questions such as "which identities
   can reach which datastores," "which compute instances are exposed to the
   internet," and "what are the blast radii of a compromised credential."
-type: Standard
+kind: standard
 position: Consumer
 access: Open
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
