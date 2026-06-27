@@ -201,7 +201,7 @@ common:
   - type: License
     name: Apache 2.0
     url: https://github.com/lyft/cartography/blob/master/LICENSE
-  - type: Releases
+  - type: ReleaseNotes
     url: https://github.com/lyft/cartography/releases
   - type: Community
     name: Lyft Engineering Blog
