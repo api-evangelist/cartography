@@ -195,6 +195,12 @@ apis:
       - type: Documentation
         url: https://lyft.github.io/cartography/modules/cloudflare/index.html
 common:
+  - type: SecurityPolicy
+    url: https://github.com/cartography-cncf/cartography/blob/master/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/cartography-cncf/cartography/blob/master/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/cartography-cncf/cartography/blob/master/CONTRIBUTING.md
   - type: Website
     url: https://lyft.github.io/cartography/
   - type: Documentation
