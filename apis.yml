@@ -10,6 +10,18 @@ description: >-
   can reach which datastores," "which compute instances are exposed to the
   internet," and "what are the blast radii of a compromised credential."
 kind: standard
+deliveryModel:
+  model: unknown
+  license: Apache 2.0
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
