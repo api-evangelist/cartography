@@ -43,7 +43,7 @@ tags:
   - Graph
   - CSPM
   - Neo4j
-  - Open-Source
+  - Open Source
   - Lyft
   - Asset Inventory
   - Identity
@@ -57,6 +57,7 @@ tags_raw:
   - Lyft
   - Asset Inventory
   - Identity
+  - Open-Source
 created: '2025-01-01'
 modified: '2026-04-23'
 url: >-
