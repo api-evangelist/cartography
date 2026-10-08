@@ -218,6 +218,12 @@ apis:
       - type: Documentation
         url: https://lyft.github.io/cartography/modules/cloudflare/index.html
 common:
+  - type: Plans
+    url: plans/cartography-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/cartography-rate-limits.yml
+  - type: FinOps
+    url: finops/cartography-finops.yml
   - type: SecurityPolicy
     url: https://github.com/cartography-cncf/cartography/blob/master/SECURITY.md
   - type: CodeOfConduct
