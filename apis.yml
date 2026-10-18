@@ -119,6 +119,10 @@ apis:
       populate Azure nodes and relationships in the graph.
     humanURL: https://lyft.github.io/cartography/modules/azure/index.html
     tags:
+      - Microsoft Azure
+      - Cloud
+      - Ingest
+    tags_raw:
       - Azure
       - Cloud
       - Ingest
@@ -198,6 +202,10 @@ apis:
       telemetry to the infrastructure graph.
     humanURL: https://lyft.github.io/cartography/modules/crowdstrike/index.html
     tags:
+      - Endpoint Detection and Response
+      - CrowdStrike
+      - Ingest
+    tags_raw:
       - EDR
       - CrowdStrike
       - Ingest
