@@ -1,4 +1,4 @@
-# Cartography (cartography)
+# Cartography
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,155 +66,111 @@
 
 Cartography is an open-source Python security-graph tool originally built at Lyft that consolidates infrastructure assets and the relationships between them into an intuitive Neo4j graph. It ingests data from 30+ cloud, identity, DevOps, and security providers (AWS, GCP, Azure, OCI, Okta, Entra ID, GitHub, Kubernetes, CrowdStrike, and more) and lets security teams answer cross-provider questions such as "which identities can reach which datastores," "which compute instances are exposed to the internet," and "what are the blast radii of a compromised credential."
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/cartography/refs/heads/main/apis.yml)
+**Areas:** Security · Cloud Security · Graph · CSPM · Neo4j · Open Source · Lyft · Asset Inventory · Identity
 
-## Scope
+## Cartography on APIs.io
 
-- **Type:** Standard
-- **Position:** Consumer
-- **Access:** Open
+Everything profiled for Cartography is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cartography/](https://apis.io/providers/cartography/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (11)
 
- - Security, Cloud Security, Graph, CSPM, Neo4j, Open Source, Lyft, Asset Inventory, Identity
+- [Cartography](https://apis.io/apis/cartography/cartography/) — Python tool that ingests infrastructure data from 30+ providers into a Neo4j graph for cross-provider security analysis.
+- [Cartography AWS Intel Module](https://apis.io/apis/cartography/aws-ingest/) — Cartography intel module that calls AWS APIs (EC2, IAM, S3, RDS, EKS, Lambda, ECS, DynamoDB, CloudWatch, ACM, KMS, CodeBuild, API Gateway, Bedrock, and…
+- [Cartography Google Cloud Intel Module](https://apis.io/apis/cartography/gcp-ingest/) — Cartography intel module that calls Google Cloud APIs (Compute, IAM, Cloud SQL, GKE, Cloud Functions, Artifact Registry, Vertex AI) to populate GCP nodes…
+- [Cartography Azure Intel Module](https://apis.io/apis/cartography/azure-ingest/) — Cartography intel module that calls Azure APIs (App Service, AKS, CosmosDB, Container Instance, Key Vault, Storage, Virtual Machines) to populate Azure…
+- [Cartography Oracle Cloud Intel Module](https://apis.io/apis/cartography/oci-ingest/) — Cartography intel module that calls Oracle Cloud Infrastructure APIs (starting with IAM) to populate OCI nodes and relationships.
+- [Cartography Okta Intel Module](https://apis.io/apis/cartography/okta-ingest/) — Ingests Okta users, groups, applications, and factors into the graph for identity-focused security analysis.
+- [Cartography Entra ID Intel Module](https://apis.io/apis/cartography/entra-id-ingest/) — Ingests Microsoft Entra ID users, groups, applications, and role assignments into the graph.
+- [Cartography GitHub Intel Module](https://apis.io/apis/cartography/github-ingest/) — Ingests GitHub organizations, repositories, users, and access relationships, enabling code-ownership and secret-exposure graph queries.
+- [Cartography Kubernetes Intel Module](https://apis.io/apis/cartography/kubernetes-ingest/) — Ingests Kubernetes cluster objects (nodes, pods, services, service accounts) for graph-based cluster-security analysis.
+- [Cartography CrowdStrike Intel Module](https://apis.io/apis/cartography/crowdstrike-ingest/) — Ingests CrowdStrike Falcon hosts and detections, connecting endpoint telemetry to the infrastructure graph.
+- [Cartography Cloudflare Intel Module](https://apis.io/apis/cartography/cloudflare-ingest/) — Ingests Cloudflare zones, DNS, and security configurations into the graph for edge-exposure analysis.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-01-01
-- **Modified:** 2026-04-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON-LD (1)
 
-### Cartography
+Linked-data contexts for the provider's vocabulary.
 
-Python tool that ingests infrastructure data from 30+ providers into a Neo4j graph for cross-provider security analysis.
+- [Cartography Context](https://apis.io/jsonld/cartography/cartography-context/)
 
-**Human URL:** [https://lyft.github.io/cartography/](https://lyft.github.io/cartography/)
+#### Plans and pricing (1)
 
-#### Tags
+Published plans, tiers and prices.
 
- - Security, Cloud Security, Graph, Neo4j
+- [Cartography Plans Pricing](https://apis.io/plans/cartography/cartography-plans-pricing/)
 
-#### Properties
+#### Rate limits (1)
 
-- [Documentation](https://lyft.github.io/cartography/)
-- [Repository](https://github.com/lyft/cartography)
-- [Cypher Query Language](https://neo4j.com/docs/cypher-manual/current/)
+Published request limits.
 
-### Cartography AWS Intel Module
+- [Cartography Rate Limits](https://apis.io/rate-limits/cartography/cartography-rate-limits/)
 
-Cartography intel module that calls AWS APIs (EC2, IAM, S3, RDS, EKS, Lambda, ECS, DynamoDB, CloudWatch, ACM, KMS, CodeBuild, API Gateway, Bedrock, and more) to populate AWS nodes and relationships in the graph.
+#### FinOps (1)
 
-**Human URL:** [AWS Module](https://lyft.github.io/cartography/modules/aws/index.html)
+What the API costs to run, by operation.
 
-#### Tags
+- [Cartography Finops](https://apis.io/finops/cartography/cartography-finops/)
 
- - AWS, Cloud, Ingest
+## Where to find this API
 
-### Cartography Google Cloud Intel Module
-
-Cartography intel module that calls Google Cloud APIs (Compute, IAM, Cloud SQL, GKE, Cloud Functions, Artifact Registry, Vertex AI) to populate GCP nodes and relationships in the graph.
-
-**Human URL:** [GCP Module](https://lyft.github.io/cartography/modules/gcp/index.html)
-
-#### Tags
-
- - GCP, Cloud, Ingest
-
-### Cartography Azure Intel Module
-
-Cartography intel module that calls Azure APIs (App Service, AKS, CosmosDB, Container Instance, Key Vault, Storage, Virtual Machines) to populate Azure nodes and relationships in the graph.
-
-**Human URL:** [Azure Module](https://lyft.github.io/cartography/modules/azure/index.html)
-
-#### Tags
-
- - Azure, Cloud, Ingest
-
-### Cartography Oracle Cloud Intel Module
-
-Cartography intel module that calls Oracle Cloud Infrastructure APIs (starting with IAM) to populate OCI nodes and relationships.
-
-#### Tags
-
- - OCI, Cloud, Ingest
-
-### Cartography Okta Intel Module
-
-Ingests Okta users, groups, applications, and factors into the graph for identity-focused security analysis.
-
-#### Tags
-
- - Identity, Okta, Ingest
-
-### Cartography Entra ID Intel Module
-
-Ingests Microsoft Entra ID users, groups, applications, and role assignments into the graph.
-
-#### Tags
-
- - Identity, Entra ID, Ingest
-
-### Cartography GitHub Intel Module
-
-Ingests GitHub organizations, repositories, users, and access relationships, enabling code-ownership and secret-exposure graph queries.
-
-#### Tags
-
- - GitHub, SCM, Ingest
-
-### Cartography Kubernetes Intel Module
-
-Ingests Kubernetes cluster objects (nodes, pods, services, service accounts) for graph-based cluster-security analysis.
-
-#### Tags
-
- - Kubernetes, Containers, Ingest
-
-### Cartography CrowdStrike Intel Module
-
-Ingests CrowdStrike Falcon hosts and detections, connecting endpoint telemetry to the infrastructure graph.
-
-#### Tags
-
- - EDR, CrowdStrike, Ingest
-
-### Cartography Cloudflare Intel Module
-
-Ingests Cloudflare zones, DNS, and security configurations into the graph for edge-exposure analysis.
-
-#### Tags
-
- - DNS, Edge, Ingest
-
-## Use Cases
-
-- Cross-provider access review — "which Okta users ultimately have admin on any AWS account?" using Okta-to-AWS identity federation relationships.
-- Exposure analysis — enumerating all EC2 instances, GCP VMs, or Azure VMs with a public IP plus a permissive security group and no patching telemetry.
-- Datastore blast-radius — tracing all IAM principals and assumed-role paths that can read a specific S3 bucket, RDS instance, or CosmosDB.
-- Code-to-cloud ownership — joining GitHub repository ownership with the cloud resources those repos deploy, to route security findings to the responsible team.
-- EDR correlation — connecting CrowdStrike detections to the underlying cloud compute instance, owning service, and responsible identity in a single Cypher query.
-- Continuous asset inventory — scheduled Cartography runs feeding dashboards and ticketing based on drift, new exposures, or new principals.
-- Compliance graph queries — answering auditor questions like "which production databases are un-encrypted or publicly reachable" with a single Cypher query.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://lyft.github.io/cartography/)
 - [Documentation](https://lyft.github.io/cartography/)
-- [Lyft GitHub Org](https://github.com/lyft)
-- [Repository](https://github.com/lyft/cartography)
-- [Issues](https://github.com/lyft/cartography/issues)
-- [Getting Started](https://lyft.github.io/cartography/install.html)
-- [Tutorial](https://lyft.github.io/cartography/usage/tutorial.html)
-- [License (Apache 2.0)](https://github.com/lyft/cartography/blob/master/LICENSE)
-- [Releases](https://github.com/lyft/cartography/releases)
-- [Lyft Engineering Blog](https://eng.lyft.com/open-sourcing-cartography-4611ba31a72)
-- [JSON-LD Context](json-ld/cartography-context.jsonld)
-- [Vocabulary Definition](vocabulary.yml)
-- [Spectral Rules](spectral/cartography.spectral.yml)
+- [Getting started](https://lyft.github.io/cartography/install.html)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 15.0** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** info@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 6.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 39.5 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cartography/](https://apis.io/providers/cartography/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cartography: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cartography/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
